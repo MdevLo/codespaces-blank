@@ -15,7 +15,7 @@ const Header = () => {
                 Travel-Visor
              </Typography>
              <Box display="flex">
-               <Typography variant='h6' className='title'>
+               <Typography variant='h6' className='title secondetitle'>
                   Explore new places
                </Typography>
                {/* <Autocomplete> */}
