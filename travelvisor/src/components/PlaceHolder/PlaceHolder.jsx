@@ -1,8 +1,8 @@
-const PlaceHolder = () => {
+import React from "react"
+
+const PlaceHolder = ({ place }) => {
     return(
-        <div>
-            PlaceHolder
-        </div>
+       <h1>{place.name}</h1>
     )
 }
 

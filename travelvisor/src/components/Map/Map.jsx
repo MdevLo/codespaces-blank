@@ -13,7 +13,7 @@ const Map = () => {
 
     return(
         <div className='mapContainer'>
-            <GoogleMapReact
+            {/* <GoogleMapReact
               bootstrapURLKeys={{key: ''}}
               defaultCenter={coordinates}
               center={coordinates}
@@ -26,7 +26,7 @@ const Map = () => {
             
             >
 
-            </GoogleMapReact>
+            </GoogleMapReact> */}
         </div>
     )
 }
