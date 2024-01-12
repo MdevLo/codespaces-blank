@@ -1,8 +1,11 @@
 .formContol{
-    width: 140px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
+    width: 150px;
+    margin-bottom: auto;
+    
+}
+.wrapper{
+    
+    margin-bottom: 20px;
     
 }
 
@@ -24,4 +27,5 @@
 .list{
     height: 75vh;
     overflow: auto;
+    
 }

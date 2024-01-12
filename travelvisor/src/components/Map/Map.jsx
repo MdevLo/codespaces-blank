@@ -1,27 +1,31 @@
 import React from "react"
-import RadarMap from "../renderMap/radarMap"
+import GoogleMapReact from 'google-map-react'
+import { Paper, Typography} from '@mui/material'
 
+
+import './styles.css'
 const Map = ({ setCoordinates, setBounds, coordinates }) => {
   
   return(
-   <div>
-     <RadarMap
-      defaultCenter={coordinates}
-      center={coordinates}
-      defaultZoom={14}
-      margin={[50, 50, 50, 50]}
-      options={''}
-      onChange={(e) =>{
-        console.log(e)
-        setCoordinates({ lat: e.center.lat, lng: e.center.lng })
-        setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw })
-      }}
-      onChildClick={''}
-     >
+   <div className="mapContainer">
+    <GoogleMapReact
+    bootstrapURLKeys={{key: 'AIzaSyBE4wLjqbZmWLlzBI5g5w3xslF0abZq1ok'}}
+    defaultCenter={coordinates}
+    center={coordinates}
+    defaultZoom={14}
+    margin ={[50, 50, 50, 50]}
+    options={''}
+    onChange={(e) => {
+      console.log(e)
+      setCoordinates({ lat: e.center.lat, lng: e.center.lng})
+      setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw})
+    }}
+   >
 
-     </RadarMap>
+    </GoogleMapReact>
    </div>
   )
  
 }
 export default Map
+
